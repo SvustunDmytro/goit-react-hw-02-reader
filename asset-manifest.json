@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-01-components/static/css/main.85ddde16.chunk.css",
-    "main.js": "/goit-react-hw-01-components/static/js/main.2af4d08c.chunk.js",
-    "main.js.map": "/goit-react-hw-01-components/static/js/main.2af4d08c.chunk.js.map",
-    "runtime-main.js": "/goit-react-hw-01-components/static/js/runtime-main.a6ab4004.js",
-    "runtime-main.js.map": "/goit-react-hw-01-components/static/js/runtime-main.a6ab4004.js.map",
-    "static/js/2.76db1d3a.chunk.js": "/goit-react-hw-01-components/static/js/2.76db1d3a.chunk.js",
-    "static/js/2.76db1d3a.chunk.js.map": "/goit-react-hw-01-components/static/js/2.76db1d3a.chunk.js.map",
-    "index.html": "/goit-react-hw-01-components/index.html",
-    "precache-manifest.33fd1db4fca64733277f432a3be9a787.js": "/goit-react-hw-01-components/precache-manifest.33fd1db4fca64733277f432a3be9a787.js",
-    "service-worker.js": "/goit-react-hw-01-components/service-worker.js",
-    "static/css/main.85ddde16.chunk.css.map": "/goit-react-hw-01-components/static/css/main.85ddde16.chunk.css.map"
+    "main.css": "/goit-react-hw-02-reader/static/css/main.85ddde16.chunk.css",
+    "main.js": "/goit-react-hw-02-reader/static/js/main.6e17d63a.chunk.js",
+    "main.js.map": "/goit-react-hw-02-reader/static/js/main.6e17d63a.chunk.js.map",
+    "runtime-main.js": "/goit-react-hw-02-reader/static/js/runtime-main.85f11a9b.js",
+    "runtime-main.js.map": "/goit-react-hw-02-reader/static/js/runtime-main.85f11a9b.js.map",
+    "static/js/2.69d178bb.chunk.js": "/goit-react-hw-02-reader/static/js/2.69d178bb.chunk.js",
+    "static/js/2.69d178bb.chunk.js.map": "/goit-react-hw-02-reader/static/js/2.69d178bb.chunk.js.map",
+    "index.html": "/goit-react-hw-02-reader/index.html",
+    "precache-manifest.b6c0885bf47af8524335b465c0519da8.js": "/goit-react-hw-02-reader/precache-manifest.b6c0885bf47af8524335b465c0519da8.js",
+    "service-worker.js": "/goit-react-hw-02-reader/service-worker.js",
+    "static/css/main.85ddde16.chunk.css.map": "/goit-react-hw-02-reader/static/css/main.85ddde16.chunk.css.map"
   }
 }

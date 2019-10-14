@@ -1,2 +1,0 @@
-(window["webpackJsonpgoit-react-hw-01-components"]=window["webpackJsonpgoit-react-hw-01-components"]||[]).push([[0],[,,,function(e,n,t){e.exports={App:"App_App__3UTZN"}},function(e,n,t){e.exports=t(10)},,,,,function(e,n,t){},function(e,n,t){"use strict";t.r(n);var o=t(0),p=t.n(o),c=t(2),a=t.n(c),r=(t(9),t(3)),s=t.n(r),i=function(){return p.a.createElement("div",{className:s.a.App},p.a.createElement("p",{className:"p"},"Hello!"))};a.a.render(p.a.createElement(i,null),document.getElementById("root"))}],[[4,1,2]]]);
-//# sourceMappingURL=main.2af4d08c.chunk.js.map
