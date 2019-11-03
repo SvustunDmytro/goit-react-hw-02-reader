@@ -6,18 +6,22 @@ const Controls = ({ handleChangeInc, handleChangeDec, index, length }) => (
   <section className={styles.controls}>
     <button
       type="button"
-      className={`${styles.button} ${
-        index <= 0 ? styles.button__disabled : styles.button
-      }`}
+      className={
+        index === 0
+          ? `${styles.button__disabled} && ${styles.button}`
+          : `${styles.button} && ${styles.button__active}`
+      }
       onClick={handleChangeDec}
     >
       Назад
     </button>
     <button
       type="button"
-      className={`${styles.button} ${
-        index >= length - 1 ? styles.button__disabled : styles.button
-      }`}
+      className={
+        index === length - 1
+          ? `${styles.button__disabled} && ${styles.button}`
+          : `${styles.button} && ${styles.button__active}`
+      }
       onClick={handleChangeInc}
     >
       Вперед
