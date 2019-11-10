@@ -1,42 +1,27 @@
-/* eslint-disable import/extensions */
 /* eslint-disable react/state-in-constructor */
-/* eslint-disable react/static-property-placement */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from './Reader.module.css';
-import Publication from './Publication/Publication.jsx';
+import Publication from './Publication/Publication';
 import Counter from './Counter/Counter';
 import Controls from './Controls/Controls';
 
 export default class Reader extends Component {
-  static propTypes = {
-    items: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.string.isRequired,
-        title: PropTypes.string.isRequired,
-        text: PropTypes.string.isRequired,
-      }).isRequired,
-    ).isRequired,
-  };
-
   state = {
     index: 0,
   };
 
-  handleChangeInc = () => {
-    const { items } = this.props;
-    this.setState(prevState => ({
-      index:
-        prevState.index >= items.length - 1
-          ? prevState.index
-          : prevState.index + 1,
-    }));
-  };
-
-  handleChangeDec = () => {
-    this.setState(prevState => ({
-      index: prevState.index !== 0 ? prevState.index - 1 : prevState.index,
-    }));
+  handleClick = ({ target }) => {
+    const { name } = target;
+    if (name === 'increment') {
+      this.setState(state => ({
+        index: state.index + 1,
+      }));
+    } else if (name === 'decrement') {
+      this.setState(state => ({
+        index: state.index - 1,
+      }));
+    }
   };
 
   render() {
@@ -45,8 +30,7 @@ export default class Reader extends Component {
     return (
       <div className={styles.reader}>
         <Controls
-          handleChangeInc={this.handleChangeInc}
-          handleChangeDec={this.handleChangeDec}
+          handleClick={this.handleClick}
           index={index}
           length={items.length}
         />
@@ -56,3 +40,13 @@ export default class Reader extends Component {
     );
   }
 }
+
+Reader.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired,
+    }).isRequired,
+  ).isRequired,
+};

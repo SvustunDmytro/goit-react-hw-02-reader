@@ -2,27 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Controls.module.css';
 
-const Controls = ({ handleChangeInc, handleChangeDec, index, length }) => (
+const Controls = ({ handleClick, index, length }) => (
   <section className={styles.controls}>
     <button
+      disabled={index === 0}
       type="button"
-      className={
-        index === 0
-          ? `${styles.button__disabled} && ${styles.button}`
-          : `${styles.button} && ${styles.button__active}`
-      }
-      onClick={handleChangeDec}
+      name="decrement"
+      className={styles.button}
+      onClick={handleClick}
     >
       Назад
     </button>
     <button
+      disabled={index === length - 1}
       type="button"
-      className={
-        index === length - 1
-          ? `${styles.button__disabled} && ${styles.button}`
-          : `${styles.button} && ${styles.button__active}`
-      }
-      onClick={handleChangeInc}
+      name="increment"
+      className={styles.button}
+      onClick={handleClick}
     >
       Вперед
     </button>
@@ -30,8 +26,7 @@ const Controls = ({ handleChangeInc, handleChangeDec, index, length }) => (
 );
 
 Controls.propTypes = {
-  handleChangeInc: PropTypes.func.isRequired,
-  handleChangeDec: PropTypes.func.isRequired,
+  handleClick: PropTypes.func.isRequired,
   index: PropTypes.number.isRequired,
   length: PropTypes.number.isRequired,
 };

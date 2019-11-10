@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions */
 import React from 'react';
 import styles from './App.module.css';
 import Reader from '../Reader/Reader';

@@ -22,16 +22,14 @@
   text-align: center;
   text-decoration: none;
   color: #fff;
-}
-
-.button__disabled {
-  background-color: #bdbdbd;
-  outline: none;
-}
-
-.button__active {
   cursor: pointer;
   background-color: #3884ff;
+}
+
+.button[disabled] {
+  background-color: #bdbdbd;
+  outline: none;
+  pointer-events: none;
 }
 
 .button__active:hover,
