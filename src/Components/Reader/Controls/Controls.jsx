@@ -5,7 +5,7 @@ import styles from './Controls.module.css';
 const Controls = ({ handleClick, index, length }) => (
   <section className={styles.controls}>
     <button
-      disabled={index === 0}
+      disabled={!index}
       type="button"
       name="decrement"
       className={styles.button}

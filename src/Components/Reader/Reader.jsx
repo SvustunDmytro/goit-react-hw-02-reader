@@ -35,7 +35,11 @@ export default class Reader extends Component {
           length={items.length}
         />
         <Counter page={index} length={items.length} />
-        <Publication item={items[index]} />
+        <Publication
+          id={items[index].id}
+          text={items[index].text}
+          title={items[index].title}
+        />
       </div>
     );
   }
