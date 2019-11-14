@@ -11,17 +11,10 @@ export default class Reader extends Component {
     index: 0,
   };
 
-  handleClick = ({ target }) => {
-    const { name } = target;
-    if (name === 'increment') {
-      this.setState(state => ({
-        index: state.index + 1,
-      }));
-    } else if (name === 'decrement') {
-      this.setState(state => ({
-        index: state.index - 1,
-      }));
-    }
+  handleClick = ({ target: { name } }) => {
+    this.setState(state => ({
+      index: name === 'increment' ? state.index + 1 : state.index - 1,
+    }));
   };
 
   render() {
@@ -35,11 +28,7 @@ export default class Reader extends Component {
           length={items.length}
         />
         <Counter page={index} length={items.length} />
-        <Publication
-          id={items[index].id}
-          text={items[index].text}
-          title={items[index].title}
-        />
+        <Publication item={items[index]} />
       </div>
     );
   }
